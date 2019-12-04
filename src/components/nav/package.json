@@ -1,0 +1,5 @@
+{
+  "name": "nav",
+  "private": true,
+  "main": "nav.js"
+}

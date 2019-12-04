@@ -1,0 +1,5 @@
+{
+  "name": "about",
+  "private": true,
+  "main": "./pages/about.js"
+}
