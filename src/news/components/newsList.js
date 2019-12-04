@@ -29,7 +29,7 @@ export const NewsList = ({
           </div>
 
           <div className="content">
-            {content.substr(0, 200).concat(` More...`)}
+            {content && content.substr(0, 200).concat(` More...`)}
             <br />
           </div>
         </div>
