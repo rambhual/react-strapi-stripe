@@ -37,7 +37,9 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <h1 className="is-size-4 has-text-weight-semibold">Saint Gobain</h1>
+              <h1 className="is-size-4 has-text-weight-semibold">
+                Saint Gobain
+              </h1>
             </Link>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -59,6 +61,9 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/products">
                 Products
+              </Link>
+              <Link className="navbar-item" to="/news">
+                News
               </Link>
               <Link className="navbar-item" to="/contact">
                 Contact
