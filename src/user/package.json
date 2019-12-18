@@ -1,0 +1,5 @@
+{
+  "name": "user",
+  "private": true,
+  "main": "./pages/user.js"
+}

@@ -1,25 +1,19 @@
 import React from "react";
 
-export const NewsList = ({
-  author,
-  content,
-  description,
-  publishedAt,
-  urlToImage
-}) => {
+export const NewsList = ({ author, content, urlToImage }) => {
   return (
     <div className="column is-4">
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img src={urlToImage} alt="Placeholder image" />>
+            <img src={urlToImage} alt={Math.random()} />
           </figure>
         </div>
         <div className="card-content">
           <div className="media">
             <div className="media-left">
               <figure className="image is-48x48">
-                <img src={urlToImage} alt="Placeholder image" />>
+                <img src={urlToImage} alt={Math.random()} />
               </figure>
             </div>
             <div className="media-content">

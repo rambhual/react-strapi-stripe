@@ -6,8 +6,8 @@ export const ProductContext = createContext();
 export default function ProductProvider({ children }) {
   const [loading, setLoading] = useState(false);
   const [news, setNews] = useState([]);
-  const [products, setProducts] = useState([]);
-  const [featured, setFeatured] = useState([]);
+  const [products] = useState([]);
+  const [featured] = useState([]);
 
   useEffect(() => {
     setLoading(true);

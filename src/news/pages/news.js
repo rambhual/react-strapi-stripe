@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../../context/product.context";
 import { NewsList } from "../components/newsList";
-export const News = () => {
+const News = () => {
   const { news, loading } = useContext(ProductContext);
   console.log(news);
   if (loading) {
@@ -15,3 +15,4 @@ export const News = () => {
     </div>
   );
 };
+export default News;
