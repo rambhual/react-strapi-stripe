@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -36,11 +36,11 @@ const Navbar = class extends React.Component {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <NavLink to="/" className="navbar-item" title="Logo">
               <h1 className="is-size-4 has-text-weight-semibold">
                 Saint Gobain
               </h1>
-            </Link>
+            </NavLink>
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -56,18 +56,18 @@ const Navbar = class extends React.Component {
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
             <div className="navbar-end has-text-centered">
-              <Link className="navbar-item" to="/about">
+              <NavLink className="navbar-item" to="/about">
                 About
-              </Link>
-              <Link className="navbar-item" to="/products">
+              </NavLink>
+              <NavLink className="navbar-item" to="/products">
                 Products
-              </Link>
-              <Link className="navbar-item" to="/news">
+              </NavLink>
+              <NavLink className="navbar-item" to="/news">
                 News
-              </Link>
-              <Link className="navbar-item" to="/contact">
+              </NavLink>
+              <NavLink className="navbar-item" to="/contact">
                 Contact
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>

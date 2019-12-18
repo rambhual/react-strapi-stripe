@@ -11,7 +11,20 @@ import { News, Contact } from "./routes";
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<div>Please wait while loading...</div>}>
+      <Suspense
+        fallback={
+          <div
+            style={{
+              display: "flex",
+              marginTop: "20%",
+              justifyContent: "center",
+              alignItems: "center"
+            }}
+          >
+            Please wait while loading...
+          </div>
+        }
+      >
         <Nav />
         <div className="container mt-5">
           <Switch>
