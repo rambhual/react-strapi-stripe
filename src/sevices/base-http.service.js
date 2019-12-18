@@ -1,7 +1,8 @@
 import axios from "axios";
+import { userUrl } from "../utils/url";
 
 export default class BaseHttpService {
-  BASE_URL = "http://localhost:1337";
+  BASE_URL = userUrl;
   _accessToken = null;
 
   constructor(routerStore) {

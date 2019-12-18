@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense } from "react";
 import Nav from "./components/nav";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 

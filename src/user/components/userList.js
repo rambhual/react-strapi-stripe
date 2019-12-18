@@ -5,11 +5,7 @@ export const UserList = ({
   id,
   name,
   email,
-  address,
-  phone,
-  website,
-  company
-}) => {
+  address}) => {
   const history = useHistory();
   return (
     <div className="column is-4" onClick={() => history.push(`/users/${id}`)}>
